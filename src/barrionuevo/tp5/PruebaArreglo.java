@@ -43,15 +43,18 @@ public class PruebaArreglo {
         char pruebaCaracter = 'd'; //11
         
         System.out.println("Sumar lista: \n"+ (java.util.Arrays.toString(pruebasumarLista)).replaceAll(",", " +"));
-        Arreglo.sumarLista(pruebasumarLista);
+        Arreglo.sumarLista(pruebasumarLista);//el método ya usa System.out.print...
         
-        System.out.println("\n\nBuscar mayor: \n"+ (java.util.Arrays.deepToString(pruebabuscarMayor).replace("], [", "],\n[")));
-        Arreglo.buscarMayor(pruebabuscarMayor);
+        System.out.println("\n\nBuscar mayor: \n"
+            + (java.util.Arrays.deepToString(pruebabuscarMayor).replace("], [", "],\n["))
+            + "\n"+ Arreglo.buscarMayor(pruebabuscarMayor));
         
-        System.out.println("\n\nCuenta Vocales: \n"+ pruebacuentaVocales);
-        Arreglo.cuentaVocales(pruebacuentaVocales);
+        System.out.println("\n\nCuenta Vocales: \n"
+            + pruebacuentaVocales 
+            + "\n"+ Arreglo.cuentaVocales(pruebacuentaVocales));
         
-        System.out.println("\n\nCuenta Caracter: \n"+ pruebaCaracter);
-        Arreglo.cuentaCaracter(pruebacuentaVocales, pruebaCaracter);
+        System.out.println("\n\nCuenta Caracter: \nCaracter: "
+            + pruebaCaracter + ", del String anterior:"
+            + "\n"+ Arreglo.cuentaCaracter(pruebacuentaVocales, pruebaCaracter));
     }
 }

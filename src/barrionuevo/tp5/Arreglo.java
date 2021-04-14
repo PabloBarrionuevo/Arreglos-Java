@@ -28,7 +28,7 @@ public class Arreglo {
                 if(dim2 > mayor) mayor = dim2;
             }
         }
-        System.out.println("Mayor "+ mayor);
+        //System.out.println("Mayor "+ mayor);
         return mayor;
     }
     public static int cuentaVocales(String cadena){
@@ -40,7 +40,7 @@ public class Arreglo {
                 if(vocal == caracter)cantidadVocales++;
             }
         }
-        System.out.println(cantidadVocales);
+        //System.out.println(cantidadVocales);
         return cantidadVocales;
     }
     public static int cuentaCaracter(String cadena, char caracter){
@@ -48,7 +48,7 @@ public class Arreglo {
         for(int i = 0, j= cadena.length(); i<j; i++){
             if(caracter == cadena.charAt(i))cantidad++;
         }
-        System.out.println(cantidad);
+        //System.out.println(cantidad);
         return cantidad;
     }
 }
