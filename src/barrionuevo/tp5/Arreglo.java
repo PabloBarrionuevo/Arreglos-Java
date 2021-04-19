@@ -22,7 +22,7 @@ public class Arreglo {
         System.out.println("Suma: "+ suma + "\nPromedio: "+ promedio);
     }
     public static int buscarMayor(int[][] arreglo){
-        int mayor = 0;
+        int mayor = arreglo[0][0];
         for(int[] dim1: arreglo){
             for(int dim2: dim1){
                 if(dim2 > mayor) mayor = dim2;

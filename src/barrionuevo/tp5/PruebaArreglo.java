@@ -1,5 +1,5 @@
 package barrionuevo.tp5;
-/*****************************************************************************
+/* ****************************************************************************
 **Trabajo práctico 5: Arreglos en Java.
 **Alumno: Barrionuevo Pablo.
 **Materia: Laboratorio 1.
@@ -20,7 +20,7 @@ package barrionuevo.tp5;
 **
 * Repositorio GIT:
 * https://github.com/PabloBarrionuevo/Arreglos-Java/tree/master
-*****************************************************************************/
+**************************************************************************** */
 public class PruebaArreglo {
     public static void main(String[] args) {
         int[] pruebasumarLista = {1,2,3,4,5,6,7,8,9,0}; // 45, 45/10
@@ -34,7 +34,10 @@ public class PruebaArreglo {
             ,{109,5,6,45,6,7,8,6,4}
             ,{654,4565,32465,65,6874,684,6341}//mayor[7][2]
             ,{55,93,3,3,3453,3,48,99,56,4}
-            ,{44,78,78,78,79,79,7856,43,21}};
+            ,{44,78,78,78,79,79,7856,43,21}},
+        pruebaTodosNegativos = {
+            {-155,-276,-8385,-4554,-582},
+            {-899,-789,-258,-998,-9888}};
         String pruebacuentaVocales = "Lorem ipsum dolor sit amet" //9
                 + ", consectetur adipiscing elit" //10
                 + ", sed do eiusmod tempor incididunt ut labore et dolore magna aliqua" //25
@@ -48,6 +51,10 @@ public class PruebaArreglo {
         System.out.println("\n\nBuscar mayor: \n"
             + (java.util.Arrays.deepToString(pruebabuscarMayor).replace("], [", "],\n["))
             + "\n"+ Arreglo.buscarMayor(pruebabuscarMayor));
+        
+        System.out.println("\n\nBuscar mayor (números negativos): \n"
+            + (java.util.Arrays.deepToString(pruebaTodosNegativos).replace("], [", "],\n["))
+            + "\n"+ Arreglo.buscarMayor(pruebaTodosNegativos));
         
         System.out.println("\n\nCuenta Vocales: \n"
             + pruebacuentaVocales 
